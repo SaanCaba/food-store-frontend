@@ -12,4 +12,7 @@ export class ProductService {
   getAllProducts(){
     return this.http.get<FoodProduct[]>(this.apiUrl + '/foods')
   }
+  getProductDetail(id: string | null){
+    return this.http.get<FoodProduct>(this.apiUrl + '/foods/' + id)
+  }
 }

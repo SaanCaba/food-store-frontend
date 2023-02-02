@@ -21,4 +21,5 @@ export class ProductsComponent {
       this.foodProducts = data;
     })
   }
+ 
 }

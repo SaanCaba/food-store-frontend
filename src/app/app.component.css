@@ -1,0 +1,27 @@
+.cont_img--fondo{
+    position: fixed;
+    top: 30%;
+    left: -22.4%;
+    z-index: 1;
+}
+
+.img__fondo{
+    display: flex;
+    justify-content: center;
+    width: 600px;
+}
+
+@media screen and (min-width: 64em){
+    .cont_img--fondo{
+        position: fixed;
+        top: 15%;
+        left: 18%;
+        z-index: 1;
+    }
+    
+    .img__fondo{
+        display: flex;
+        justify-content: center;
+        width: auto;
+    }
+}

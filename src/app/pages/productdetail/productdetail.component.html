@@ -1,0 +1,14 @@
+<div class="div_cont--detail">
+    <button class="btn__back" (click)="goBack()">Back</button>
+    <div class="div_cont-carddetail">
+        <div class="cont-img_detail">
+            <img class="img_detail" [src]="foodProduct.image" alt="">
+        </div>
+        <div class="div_contentDetail--nocol">
+            <div class="div_contentDetail--col">
+                <h1>{{foodProduct.name}}</h1>
+                <p>{{foodProduct.type}}</p>
+            </div>
+        </div>
+    </div>
+</div>
