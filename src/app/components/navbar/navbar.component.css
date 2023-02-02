@@ -1,0 +1,22 @@
+.div_navbar{
+    width: 100%;
+    background-color: rgba(193, 193, 47, 0.717);
+    display: flex;
+    justify-content: space-between;
+}
+
+.img_icon{
+    width: 60px;
+    margin-left: 40px;
+}
+
+.div__title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 40px;
+}
+
+.div__title p{
+    font-weight: bold;
+}

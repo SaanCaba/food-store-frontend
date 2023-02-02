@@ -1,0 +1,25 @@
+.div_contFoods{
+    width: 100%;
+    height: 100%;
+}
+
+.div__gridContfoods{
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 64em){
+    .div_contFoods{
+        width: 100%;
+        height: 100%;
+        display: grid;
+        background-color: rgba(52, 52, 52, 0.323);
+    }
+    .div__gridContfoods{
+        margin: 80px;
+        justify-items: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
