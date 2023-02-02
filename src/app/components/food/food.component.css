@@ -1,19 +1,23 @@
 .div_contFoodC{
     padding: 10px;
     margin-bottom: 50px;
+    background-color: rgba(72, 72, 72, 0.51);
+    border-radius: 12px;
 }
 .img_food{
-    width: 400px;
-    height: 380px;
+    width: 300px;
+    height: 280px;
     object-fit: cover;
     border-radius: 10px;
+    display: block;
+    margin: auto;
 }
 
 .h1_titleFood{
     text-align: center;
     font-weight: bold;
-    margin-bottom: 15px;
-    color: rgb(68, 68, 68);
+    margin-bottom: 10px;
+    color: rgb(14, 13, 13);
     font-size: 20px;
 }
 
@@ -23,4 +27,66 @@
     color: black;
     font-size: 18px;
     margin-bottom: 15px;
+}
+
+.div_detail{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.div_detail button{
+    padding: 8px;
+    border: none;
+    font-weight: bold;
+    border-radius: 12px;
+    font-size: 20px;
+}
+
+@media screen and (min-width: 64em){
+    .div_contFoodC{
+        padding: 20px;
+        margin-bottom: 50px;
+        background-color: rgba(72, 72, 72, 0.646);
+        border-radius: 12px;
+    }
+    .img_food{
+        width: 400px;
+        height: 380px;
+        object-fit: cover;
+        border-radius: 10px;
+        display: block;
+        margin: auto;
+    }
+    
+    .h1_titleFood{
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: rgb(14, 13, 13);
+        font-size: 20px;
+    }
+    
+    .p_typeFood{
+        text-align: center;
+        font-weight: bold;
+        color: black;
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+    
+    .div_detail{
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+    }
+    
+    .div_detail button{
+        padding: 8px;
+        border: none;
+        font-weight: bold;
+        border-radius: 12px;
+        font-size: 17px;
+
+    }
 }
