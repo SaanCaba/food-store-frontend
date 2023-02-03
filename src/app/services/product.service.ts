@@ -15,4 +15,7 @@ export class ProductService {
   getProductDetail(id: string | null){
     return this.http.get<FoodProduct>(this.apiUrl + '/foods/' + id)
   }
+  getProductsByType(type:string){
+    return this.http.get<FoodProduct[]>(this.apiUrl + '/foods/filter?type=' + type)
+  }
 }

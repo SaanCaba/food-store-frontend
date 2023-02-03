@@ -10,6 +10,8 @@ import { HomeComponent } from './pages/home/home.component';
 import { ProductsComponent } from './pages/products/products.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ProductdetailComponent } from './pages/productdetail/productdetail.component';
+import { LoaderComponent } from './components/loader/loader.component';
+import { NotFoundComponent } from './pages/not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +22,8 @@ import { ProductdetailComponent } from './pages/productdetail/productdetail.comp
     HomeComponent,
     ProductsComponent,
     ProductdetailComponent,
+    LoaderComponent,
+    NotFoundComponent,
   ],
   imports: [
     BrowserModule,

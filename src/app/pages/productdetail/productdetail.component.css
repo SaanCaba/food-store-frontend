@@ -8,10 +8,11 @@
 
 .div_cont-carddetail{
     height: 100%;
-    margin: 20px;
+    margin: 15px;
     display: flex;
     z-index: 999;
     position: relative;
+    backdrop-filter: blur(2px);
 }
 
 .div_contentDetail--nocol{
@@ -28,6 +29,11 @@
 
 .div_contentDetail--nocol h1{
     font-size: 35px;
+    color: white;
+}
+.div_contentDetail--nocol p{
+    font-size: 30px;
+    font-weight: bold;
     color: white;
 }
 
@@ -53,4 +59,5 @@
     font-weight: bold;
     margin: 10px;
     border-radius: 12px;
+    cursor: pointer;
 }

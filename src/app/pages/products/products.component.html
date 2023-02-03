@@ -1,4 +1,9 @@
-<div class="div_contFoods">
+<app-loader *ngIf="foodProducts.length === 0"></app-loader>
+<div *ngIf="foodProducts.length > 0" class="div_contFoods">
+    <div class="cont_btnsType">
+        <button (click)="getFoodByFilter('Pizza')">Pizza's</button>
+        <button (click)="getFoodByFilter('Burger')">Burger's</button>
+    </div>
     <div class="div__gridContfoods">
         <app-food
         [food]="food"

@@ -12,6 +12,7 @@
     height: 700px;
     width: 80%;
     border-radius: 16px;
+    z-index: 1;
 }
 
 .div__cont--btn{

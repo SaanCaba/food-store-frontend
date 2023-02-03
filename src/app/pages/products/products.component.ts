@@ -21,5 +21,11 @@ export class ProductsComponent {
       this.foodProducts = data;
     })
   }
- 
+  getFoodByFilter(type:string){
+    this.productService.getProductsByType(type)
+    .subscribe(data => {
+      console.log(data)
+      this.foodProducts = data;
+    })
+  }
 }
