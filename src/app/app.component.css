@@ -13,6 +13,7 @@
     display: flex;
     align-items:center;
     justify-content: center;
+    perspective: 1000px;
 }
 
 .img__fondo{
@@ -21,11 +22,17 @@
     margin-bottom: 100px;
     cursor: pointer;
     transition: 1s ease-out;
+    animation: rotate 10s linear infinite; 
+    filter: drop-shadow(16px 16px 20px red) invert(75%);
 }
 
-.img__fondo:hover{
-    transform: scale(1.2);
+
+
+@keyframes rotate{
+    to{ transform: rotateY(360deg); }
 }
+
+
 
 @media screen and (min-width: 64em){
     .cont_img--fondo{
@@ -45,8 +52,8 @@
     }
     
     .img__fondo{
-        width: 850px;
+        width: min-content;
         height: 500px;
-        margin-bottom: 100px;
     }
+    
 }
