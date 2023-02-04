@@ -8,13 +8,26 @@
     z-index: auto;
 }
 
+
+
 .div_cont-carddetail{
     height: 100%;
     margin: 15px;
     display: flex;
+    flex-direction: column;
     z-index: 999;
     position: relative;
     backdrop-filter: blur(2px);
+    animation: 1s detail ease-out;
+}
+
+@keyframes detail {
+    0%{
+        transform: translateX(-30%)
+    }
+    100%{
+        transform: translateX(0%)
+    }
 }
 
 .div_contentDetail--nocol{
@@ -27,28 +40,32 @@
 .div_contentDetail--col{
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .div_contentDetail--nocol h1{
-    font-size: 35px;
+    font-size: 40px;
     color: white;
+    font-weight: bold;
+    text-align: center;
 }
 .div_contentDetail--nocol p{
-    font-size: 30px;
+    font-size: 33px;
     font-weight: bold;
     color: white;
+    text-align: center;
 }
 
 .cont-img_detail{
-    width: 800px;
-    height: 680px;
+    width: 100%;
+    height: 330px;
 }
 
 .img_detail{
-    width: 600px;
-    height: 700px;
+    width: 100%;
+    height: 330px;
     object-fit: cover;
-    border-radius: 12px;
+    border-radius: 10px 10px 0px 0px;
     display: block;
     margin: auto;
 }
@@ -62,4 +79,90 @@
     margin: 10px;
     border-radius: 12px;
     cursor: pointer;
+    transition: .4s ease-in;
+}
+.btn__back:hover{
+    background-color: rgb(24, 24, 24);
+    color: white;
+}
+
+
+@media screen and (min-width: 64em){
+    .div_cont--detail{
+        position: relative;
+        width: 90%;
+        height: 800px;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        z-index: auto;
+    }
+    
+    .div_cont-carddetail{
+        height: 100%;
+        margin: 15px;
+        display: flex;
+        flex-direction: unset;
+        z-index: 999;
+        position: relative;
+        backdrop-filter: blur(2px);
+        animation: 1s detail ease-out;
+    }
+
+    @keyframes detail {
+        0%{
+            transform: translateX(-30%)
+        }
+        100%{
+            transform: translateX(0%)
+        }
+    }
+    
+    .div_contentDetail--nocol{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .div_contentDetail--col{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .div_contentDetail--nocol h1{
+        font-size: 35px;
+        color: white;
+    }
+    .div_contentDetail--nocol p{
+        font-size: 30px;
+        font-weight: bold;
+        color: white;
+    }
+    
+    .cont-img_detail{
+        width: 800px;
+        height: 680px;
+    }
+    
+    .img_detail{
+        width: 600px;
+        height: 700px;
+        object-fit: cover;
+        border-radius: 12px;
+        display: block;
+        margin: auto;
+    }
+    
+    .btn__back{
+        width: min-content;
+        padding: 10px;
+        border: none;
+        font-size: 18px;
+        font-weight: bold;
+        margin: 10px;
+        border-radius: 12px;
+        cursor: pointer;
+    }
+    
 }

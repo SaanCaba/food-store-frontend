@@ -4,6 +4,7 @@
     left: -22.4%; */
     width: 100%;
     height: 100vh;
+    backdrop-filter: blur(2px);
 }
 
 .cont_img--flex{
@@ -18,6 +19,12 @@
     width: 400px;
     height: 300px;
     margin-bottom: 100px;
+    cursor: pointer;
+    transition: 1s ease-out;
+}
+
+.img__fondo:hover{
+    transform: scale(1.2);
 }
 
 @media screen and (min-width: 64em){

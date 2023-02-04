@@ -8,6 +8,7 @@
 .img_icon{
     width: 60px;
     margin-left: 40px;
+    cursor: pointer;
 }
 
 .div__title{

@@ -1,8 +1,8 @@
 <app-loader *ngIf="foodProducts.length === 0"></app-loader>
 <div *ngIf="foodProducts.length > 0" class="div_contFoods">
     <div class="cont_btnsType">
-        <button (click)="getFoodByFilter('Pizza')">Pizza's</button>
-        <button (click)="getFoodByFilter('Burger')">Burger's</button>
+        <app-button (click)="getFoodByFilter('Pizza')" message="Pizza's"></app-button>
+        <app-button (click)="getFoodByFilter('Burger')" message="Burger's"></app-button>
     </div>
     <div class="div__gridContfoods">
         <app-food

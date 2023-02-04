@@ -5,6 +5,18 @@
     border-radius: 12px;
     width: 300px;
     height: 400px;
+    animation: test .6s ease-out;
+}
+@keyframes test{
+    0%{
+        opacity: .3;
+        transform: translateY(-20%);
+    }
+    100%{
+        opacity: 1;
+        transform: translate3d(0%);
+
+    }
 }
 .img_food{
     width: 300px;
@@ -57,13 +69,24 @@
         width: 400px;
         height: 500px;
     }
-    .img_food{
+    .cont-img{
         width: 400px;
         height: 380px;
-        object-fit: cover;
+        overflow: hidden;
+        border-radius: 10px 10px 0px 0px;
+    }
+    .img_food{
+        width: 100%;
+        height: 100%;
+        object-fit:cover;
         border-radius: 10px 10px 0px 0px;
         display: block;
         margin: auto;
+        transition: 200ms ease-in;
+        cursor: pointer;
+    }
+    .img_food:hover{
+        scale: 1.1;
     }
     
     .h1_titleFood{

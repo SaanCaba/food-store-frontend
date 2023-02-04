@@ -12,6 +12,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { ProductdetailComponent } from './pages/productdetail/productdetail.component';
 import { LoaderComponent } from './components/loader/loader.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { ButtonComponent } from './components/button/button.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +26,8 @@ import { NotFoundComponent } from './pages/not-found/not-found.component';
     ProductdetailComponent,
     LoaderComponent,
     NotFoundComponent,
+    FooterComponent,
+    ButtonComponent,
   ],
   imports: [
     BrowserModule,
