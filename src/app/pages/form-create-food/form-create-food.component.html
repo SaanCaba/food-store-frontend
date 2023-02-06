@@ -1,0 +1,19 @@
+<div class="cont__formCreate">
+    <form (submit)="createFood()" class="form_createFood">
+        <div class="div__contFirstCol">
+            <input [(ngModel)]="infoFoodForm.name" [ngModelOptions]="{standalone: true}"  type="text" placeHolder="Name">
+            <select name="selectt"  [(ngModel)]="infoFoodForm.type">
+                <option value="">Types</option>
+                <option [value]="type" *ngFor="let type of types">{{type}}</option>
+            </select>
+        </div>
+        <div class="div__contSecondCol">
+            <input (change)="getFile($event)"  type="file">
+            <textarea  [(ngModel)]="infoFoodForm.description" [ngModelOptions]="{standalone: true}"></textarea>
+        </div>
+
+        <div>
+            <button type="submit">Send</button>
+        </div>
+    </form>
+</div>

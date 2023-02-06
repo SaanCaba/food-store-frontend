@@ -14,6 +14,10 @@ import { LoaderComponent } from './components/loader/loader.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ButtonComponent } from './components/button/button.component';
+import { CreateFoodFormComponent } from './components/create-food-form/create-food-form.component';
+import { FormCreateFoodComponent } from './pages/form-create-food/form-create-food.component';
+import { InputComponent } from './components/input/input.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -28,11 +32,16 @@ import { ButtonComponent } from './components/button/button.component';
     NotFoundComponent,
     FooterComponent,
     ButtonComponent,
+    CreateFoodFormComponent,
+    FormCreateFoodComponent,
+    InputComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -18,4 +18,7 @@ export class ProductService {
   getProductsByType(type:string){
     return this.http.get<FoodProduct[]>(this.apiUrl + '/foods/filter?type=' + type)
   }
+  createNewFood(data: FoodProduct){
+    return this.http.post<FoodProduct>(this.apiUrl + '/foods', data)
+  }
 }

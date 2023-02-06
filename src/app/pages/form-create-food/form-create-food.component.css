@@ -1,0 +1,26 @@
+.cont__formCreate{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form_createFood{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    width: 800px;
+    height: 450px;
+}
+
+.div__contFirstCol{
+    display: flex;
+    flex-direction: column;
+}
+
+.div__contSecondCol{
+    display: flex;
+    flex-direction: column;
+}

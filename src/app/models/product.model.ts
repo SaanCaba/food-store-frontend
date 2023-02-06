@@ -1,6 +1,7 @@
 export interface FoodProduct{
-    id: number,
+    id?: number,
     name: string,
-    image: string,
-    type: string
+    image: string | null | ArrayBuffer,
+    type: string,
+    description? : string
 }
