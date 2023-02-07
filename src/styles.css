@@ -8,3 +8,20 @@ html,body{
     background-color: rgb(232, 82, 82);
     position: relative;
 }
+
+.err_message{
+    color: 'red';
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+  }
+
+body::-webkit-scrollbar-track {
+    background: #ffffff71;
+  }
+
+body::-webkit-scrollbar-thumb {
+    background: #5a2e2e;
+    border-radius: 10px;
+  }

@@ -1,9 +1,9 @@
 .btn__generic{
-    padding: 8px;
+    padding: 6px;
     border: none;
     font-weight: bold;
     border-radius: 10px;
-    font-size: 18px;
+    font-size: 16px;
     cursor: pointer;
     transition: .4s ease-in;
 }
@@ -11,4 +11,21 @@
 .btn__generic:hover{
     background-color: black;
     color: white;
+}
+
+@media screen and (min-width: 64em){
+    .btn__generic{
+        padding: 8px;
+        border: none;
+        font-weight: bold;
+        border-radius: 10px;
+        font-size: 18px;
+        cursor: pointer;
+        transition: .4s ease-in;
+    }
+    
+    .btn__generic:hover{
+        background-color: black;
+        color: white;
+    }
 }

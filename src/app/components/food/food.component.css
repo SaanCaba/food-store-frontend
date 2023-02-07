@@ -6,6 +6,7 @@
     width: 300px;
     height: 400px;
     animation: test .6s ease-out;
+    
 }
 @keyframes test{
     0%{

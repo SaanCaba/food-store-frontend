@@ -41,6 +41,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    gap: 10px;
 }
 
 .div_contentDetail--nocol h1{
@@ -49,11 +50,17 @@
     font-weight: bold;
     text-align: center;
 }
-.div_contentDetail--nocol p{
+.div_contentDetail--nocol .type{
     font-size: 33px;
     font-weight: bold;
     color: white;
     text-align: center;
+}
+
+.p_desc{
+    font-size: 18px;
+    text-align: center;
+    color: white;
 }
 
 .cont-img_detail{
@@ -134,7 +141,7 @@
         font-size: 35px;
         color: white;
     }
-    .div_contentDetail--nocol p{
+    .div_contentDetail--nocol{
         font-size: 30px;
         font-weight: bold;
         color: white;

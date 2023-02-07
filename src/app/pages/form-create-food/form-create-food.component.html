@@ -1,19 +1,29 @@
 <div class="cont__formCreate">
+    <div *ngIf="loader === true" class="div_cargaForm">
+        <img class="img_loader" src="https://gifimage.net/wp-content/uploads/2018/11/food-loading-gif-8.gif" alt="">
+    </div>
     <form (submit)="createFood()" class="form_createFood">
-        <div class="div__contFirstCol">
-            <input [(ngModel)]="infoFoodForm.name" [ngModelOptions]="{standalone: true}"  type="text" placeHolder="Name">
-            <select name="selectt"  [(ngModel)]="infoFoodForm.type">
-                <option value="">Types</option>
-                <option [value]="type" *ngFor="let type of types">{{type}}</option>
-            </select>
+        <app-button type="button" (click)="goBack($event)" class="btn-back" message="Back"></app-button>
+        <h1 class="title-form">Create your Food!</h1>
+        <div class="cont_fatherForm">
+            <div class="cont_formCol">
+                <label>Name:</label>
+                <input class="inpt-form" [(ngModel)]="infoFoodForm.name" [ngModelOptions]="{standalone: true}"
+                    type="text" placeHolder="Name">
+                <label>Type:</label>
+                <select class="select_type" name="selectt" [(ngModel)]="infoFoodForm.type">
+                    <option value="">Types</option>
+                    <option [value]="type" *ngFor="let type of types">{{type}}</option>
+                </select>
+                <label>Image:</label>
+                <input class="inpt-formFile" (change)="getFile($event)" type="file">
+                <label>Description:</label>
+                <textarea class="text-area_form" [(ngModel)]="infoFoodForm.description"
+                    [ngModelOptions]="{standalone: true}"></textarea>
+            </div>
         </div>
-        <div class="div__contSecondCol">
-            <input (change)="getFile($event)"  type="file">
-            <textarea  [(ngModel)]="infoFoodForm.description" [ngModelOptions]="{standalone: true}"></textarea>
-        </div>
-
-        <div>
-            <button type="submit">Send</button>
+        <div class="div_contBtnForm">
+            <app-button class="btn-submitForm" type="submit" message="Send"></app-button>
         </div>
     </form>
 </div>
