@@ -17,14 +17,12 @@ export class ProductsComponent {
   ngOnInit():void{
     this.productService.getAllProducts()
     .subscribe(data => {
-      console.log(data)
       this.foodProducts = data;
     })
   }
   getFoodByFilter(type:string){
     this.productService.getProductsByType(type)
     .subscribe(data => {
-      
       this.foodProducts = data;
     })
   }

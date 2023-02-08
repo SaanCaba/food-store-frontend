@@ -1,4 +1,7 @@
-<div class="div_cont--detail">
+<div *ngIf="foodProduct.image === ''">
+    <app-loader></app-loader>
+</div>
+<div *ngIf="foodProduct.name.length > 0" class="div_cont--detail">
     <app-button style="margin-top: 15px;" (click)="goBack()" message="Back"></app-button>
     <div class="div_cont-carddetail">
         <div class="cont-img_detail">

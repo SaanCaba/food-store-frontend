@@ -16,7 +16,8 @@ export class ProductdetailComponent {
     id: 0,
     name: '',
     image:'',
-    type:''
+    type:'',
+    description: ''
   }
   constructor(
     private route : ActivatedRoute,
@@ -37,7 +38,6 @@ export class ProductdetailComponent {
     )
     .subscribe(data =>{
       this.foodProduct = data;
-      console.log(this.foodProduct)
     })
   }
 

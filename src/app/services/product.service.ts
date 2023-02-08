@@ -5,7 +5,7 @@ import { FoodProduct } from '../models/product.model';
   providedIn: 'root'
 })
 export class ProductService {
-  private apiUrl : string = 'http://localhost:3001'
+  private apiUrl : string = 'https://backend-angular-food-store.onrender.com'
   constructor(
     private http: HttpClient
   ) { }
