@@ -15,9 +15,7 @@ export class FoodComponent {
   }
   ngOnInit(){
     if(this.food.id === undefined){
-      console.log(this.food._id)
       this.food.id = this.food._id;
-      console.log(this.food.id)
     }
   }
 }

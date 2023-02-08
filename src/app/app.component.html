@@ -1,8 +1,12 @@
 <app-navbar></app-navbar>
-<div class="cont_img--fondo"> 
+<div class="cont_img--fondo">
     <div class="cont_img--flex">
-        <img routerLink="/home/products" class="img__fondo" src="https://i.pinimg.com/originals/94/ee/2f/94ee2fda4931c26b3c55ed23d28e885e.png" alt="">
+        <img routerLink="/home/products" class="img__fondo"
+            src="https://i.pinimg.com/originals/94/ee/2f/94ee2fda4931c26b3c55ed23d28e885e.png" alt="">
     </div>
 </div>
-<router-outlet></router-outlet>
 
+<router-outlet></router-outlet>
+<div *ngIf="render === true">
+    <app-footer></app-footer>
+</div>

@@ -4,11 +4,11 @@
         <app-button (click)="getFoodByFilter('Pizza')" message="Pizza's"></app-button>
         <app-button (click)="getFoodByFilter('Burger')" message="Burger's"></app-button>
     </div>
+    <div class="div_inptbusqueda">
+        <app-input-busqueda (searchInput)="test($event)"></app-input-busqueda>
+    </div>
     <div class="div__gridContfoods">
-        <app-food
-        [food]="food"
-        *ngFor="let food of foodProducts"
-        >
+        <app-food [food]="food" *ngFor="let food of foodProducts">
 
         </app-food>
     </div>

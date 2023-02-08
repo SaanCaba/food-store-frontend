@@ -18,6 +18,7 @@ import { CreateFoodFormComponent } from './components/create-food-form/create-fo
 import { FormCreateFoodComponent } from './pages/form-create-food/form-create-food.component';
 import { InputComponent } from './components/input/input.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { InputBusquedaComponent } from './components/input-busqueda/input-busqueda.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     CreateFoodFormComponent,
     FormCreateFoodComponent,
     InputComponent,
+    InputBusquedaComponent,
   ],
   imports: [
     BrowserModule,

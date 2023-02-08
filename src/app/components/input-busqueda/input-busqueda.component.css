@@ -1,0 +1,26 @@
+.inpt_busqueda{
+    padding: 15px;
+    border: none;
+    font-weight: bold;
+    border-radius: 12px 0px 0px 0px;
+    font-size: 17px;
+}
+
+.btn_busqueda{
+    padding: 15px;
+    border: none;
+    font-weight: bold;
+    border-radius: 0px 0px 12px 0px;
+    font-size: 17px; 
+    cursor: pointer;
+    transition: .5s linear;
+}
+
+.btn_busqueda:hover{
+    background-color: black;
+    color: white;
+}
+
+.inpt_busqueda:focus{
+    outline: none;
+}
