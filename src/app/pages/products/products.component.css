@@ -1,4 +1,4 @@
-.div_contFoods{
+.div_contFoods {
     width: 100%;
     height: 100%;
     display: grid;
@@ -6,13 +6,13 @@
     justify-items: center;
 }
 
-.div__gridContfoods{
+.div__gridContfoods {
     margin: 30px;
     display: flex;
     flex-direction: column;
 }
 
-.cont_btnsType{
+.cont_btnsType {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -20,7 +20,7 @@
     gap: 10px;
 }
 
-.cont_btnsType button{
+.cont_btnsType button {
     padding: 8px;
     border: none;
     font-weight: bold;
@@ -30,36 +30,38 @@
     transition: .4s ease-in;
 }
 
-.cont_btnsType button:hover{
+.cont_btnsType button:hover {
     background-color: rgb(24, 24, 24);
     color: white;
 }
 
-.div_inptbusqueda{
+.div_inptbusqueda {
     width: 100%;
     display: flex;
     justify-content: center;
     margin-top: 20px;
 }
 
-@media screen and (min-width: 64em){
-    .div_contFoods{
+@media screen and (min-width: 64em) {
+    .div_contFoods {
         width: 100%;
         height: 100%;
         display: grid;
         justify-items: normal;
     }
-    .div__gridContfoods{
+
+    .div__gridContfoods {
         margin: 80px;
         justify-items: center;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
-    .cont_btnsType{
+    .cont_btnsType {
         width: 100%;
     }
-    .cont_btnsType button{
+
+    .cont_btnsType button {
         padding: 8px;
         border: none;
         font-weight: bold;
@@ -68,7 +70,8 @@
         cursor: pointer;
         transition: .4s ease-in;
     }
-    .cont_btnsType button:hover{
+
+    .cont_btnsType button:hover {
         background-color: rgb(24, 24, 24);
         color: white;
     }
