@@ -1,27 +1,57 @@
 /* You can add global styles to this file, and also import other style files */
 @import url(./styles/reset.css);
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
-*{
-    font-family: 'Quicksand', sans-serif;
-}
-html,body{
-    background-color: rgb(232, 82, 82);
-    position: relative;
+
+* {
+  font-family: 'Quicksand', sans-serif;
 }
 
-.err_message{
-    color: 'red';
+html,
+body {
+  background-color: rgb(232, 82, 82);
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  background-color: rgb(237, 103, 103);
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+.err_message {
+  color: 'red';
 }
 
 body::-webkit-scrollbar {
-    width: 10px;
-  }
+  width: 10px;
+}
 
 body::-webkit-scrollbar-track {
-    background: #ffffff71;
-  }
+  background: #ffffff71;
+}
 
 body::-webkit-scrollbar-thumb {
-    background: #5a2e2e;
-    border-radius: 10px;
+  background: #5a2e2e;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 64em) {
+  footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background-color: rgb(237, 103, 103);
+    margin-top: 100px;
   }
+}

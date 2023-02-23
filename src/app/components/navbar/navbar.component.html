@@ -6,6 +6,7 @@
     </nav>
     <div class="div__cont--btnform">
         <app-button class="btn_nav" routerLink="/home/createFood" message="Create your product!"></app-button>
+        <app-logout-button [class.noRender]="!render"></app-logout-button>
     </div>
     <div class="div__title">
         <p>FOOD-STORE</p>

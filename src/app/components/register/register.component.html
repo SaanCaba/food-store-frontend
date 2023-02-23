@@ -1,0 +1,9 @@
+<div class="cont-register-div">
+    <form class="cont-register-form" (submit)="onSubmitForm(userInfo)">
+        <h1 class="form-title">Register</h1>
+        <input [(ngModel)]="userInfo.email" name="email" type="text">
+        <input [(ngModel)]="userInfo.password" name="password" type="password">
+        <h1 (click)="goLogin()" class="form-gologin">Do you have an account?</h1>
+        <button type="submit">Register</button>
+    </form>
+</div>

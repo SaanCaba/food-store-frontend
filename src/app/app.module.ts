@@ -14,11 +14,16 @@ import { LoaderComponent } from './components/loader/loader.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ButtonComponent } from './components/button/button.component';
-import { CreateFoodFormComponent } from './components/create-food-form/create-food-form.component';
 import { FormCreateFoodComponent } from './pages/form-create-food/form-create-food.component';
 import { InputComponent } from './components/input/input.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { InputBusquedaComponent } from './components/input-busqueda/input-busqueda.component';
+import { LoginComponent } from './components/login/login.component';
+import { RegisterComponent } from './components/register/register.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideAuth,getAuth } from '@angular/fire/auth';
+import { LogoutButtonComponent } from './components/logout-button/logout-button.component';
 
 @NgModule({
   declarations: [
@@ -33,17 +38,21 @@ import { InputBusquedaComponent } from './components/input-busqueda/input-busque
     NotFoundComponent,
     FooterComponent,
     ButtonComponent,
-    CreateFoodFormComponent,
     FormCreateFoodComponent,
     InputComponent,
     InputBusquedaComponent,
+    LoginComponent,
+    RegisterComponent,
+    LogoutButtonComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideAuth(() => getAuth())
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,16 @@
+<div class="cont-login-view">
+    <div class="cont-col-login-view">
+        <h1 class="login-title">Log in!</h1>
+        <form class="cont-login-form" (submit)="onSubmitForm(userInfo)">
+            <input [(ngModel)]="userInfo.email" name="email" type="text">
+            <input [(ngModel)]="userInfo.password" name="password" type="password">
+            <button type="submit">Log in</button>
+        </form>
+        <div class="cont-goregister">
+            <h1 (click)="goRegister()">You do not have an account?</h1>
+        </div>
+        <div class="cont-btn-google">
+            <button class="btn-google" (click)="logingoogle()">Log in with Google</button>
+        </div>
+    </div>
+</div>
